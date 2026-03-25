@@ -3,56 +3,65 @@
     <head>
         <meta charset="utf-8"/>
         <title>Inicio de Streak</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Streak</h1>
+        <header>
+            <img src="assets/logo-vacio.png" alt="Logo">
+        </header>
 
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miercoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                    <th>Sabado</th>
-                    <th>Domingo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Habito 1</th>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                </tr>
-                <tr>
-                    <th>Habito 2</th>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                </tr>
-                <tr>
-                    <th>Habito 3</th>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div id="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>L</th>
+                        <th>M</th>
+                        <th>X</th>
+                        <th>J</th>
+                        <th>V</th>
+                        <th>S</th>
+                        <th>D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Hábito 1</th>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>                        
+                    </tr>
+                    <tr>
+                        <th>Hábito 2</th>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>                        
+                    </tr>
+                    <tr>
+                        <th>Hábito 3</th>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>
+                        <td><input type="checkbox"/></td>                        
+                    </tr>
+                </tbody>
+            </table>
+            <div class="contenedor-boton">
+                <input type="button" value=" Agregar hábito + ">
+            </div>
+        </div>
+        
     </body>
 </html>
