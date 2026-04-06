@@ -1,54 +1,57 @@
 /*===== Reset =====*/
 * {
     margin: 0px;
+
     padding: 0px;
-}
-
-/*===== Global =====*/
-body {
-    background-color: #dce7f7;
-    font-size: 16px;
-    color: rgb(49, 49, 49);
-}
-
-/*===== Tipografia =====*/
-h1 {
-    font-size: 32px;
 }
 
 /*===== Header =====*/
 header {
-    height: 140px;
+    height: 90px;
+
     text-align: center;
 }
 
 header img {
     height: 100px;
+
     padding: 20px;
 }
 
-/*===== Contenedor Principal =====*/
+/*===== Body =====*/
+body {
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
 
-#container {
-    background-color: white;
+    background-color: #dce7f7;
+    color: rgb(49, 49, 49);
+}
+
+/*===== Table =====*/
+.table-container {
+    background-color: #fff;
+
     margin: 0px auto;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 10px;
-    width: 40%;
-    
+
+    width: 500px;
+
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
-/*===== Tabla =====*/
 table {
     margin: 0px auto;
+
     border-collapse: collapse;
 }
 
 th, td {
-    padding: 10px;
     font-size: 14px;
+
+    padding: 10px;
+
     border-bottom: 1px solid #ccc;
 }
 
@@ -60,28 +63,87 @@ td {
     text-align: center;
 }
 
-/*===== Boton =====*/
-button {
-    display: block;
-    margin: 0px auto;
-}
+/*===== Buttons =====*/
 button {
     background-color: #4a6cf7;
-    color: white;
+    color: #fff;
+
+    display: block;
+
+    margin: 0px auto;
     margin-top: 10px;
     padding: 10px 20px;
+
     border-radius: 8px;
     border: none;
-    cursor: pointer;
 }
 
 button:hover {
     background-color: #3b5be0;
 }
 
-/*===== Checkbox=====*/
+/*===== Modal =====*/
 
-input[type="checkbox"] {
-    accent-color: #4a6cf7;
-    transform: scale(1.2);
+.modal-container {
+    background-color: rgba(0, 0 , 0, 0.3);
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background-color: #fff;
+
+    width: 400px;
+
+    padding: 20px; 
+    margin-top: 40px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;     
+    align-items: center;        
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+
+    padding: 10px;
+    margin: 15px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #4a6cf7;
+    box-shadow: 0 0 5px rgba(74, 108, 247, 0.3);
+}
+
+input::placeholder {
+    color: #aaa;
 }

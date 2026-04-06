@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
         <meta charset="utf-8"/>
         <title>Inicio de Streak</title>
         <link rel="stylesheet" href="styles.css" />
@@ -11,11 +14,13 @@
             <img src="assets/logo-vacio.png" alt="Logo">
         </header>
 
-        <div id="container">
+        <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th></th>
+                        <th>
+                            <button id="delete-all"> - </button>
+                        </th>
                         <th>L</th>
                         <th>M</th>
                         <th>X</th>
@@ -25,11 +30,18 @@
                         <th>D</th>
                     </tr>
                 </thead>
-                <tbody id="tabla-habitos">
-                </tbody>
+                <tbody id="habit-table"></tbody>
             </table>
-            <button id="agregar-habito"> Agregar Hábito + </button>            
+            <button id="open"> Agregar Hábito + </button>
         </div>
+
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h1>Mi nuevo hábito es...</h1>
+                <input type="text" id="habit" placeholder="Ej. Ir al Gym">
+                <button id="close"> Listo </button>
+        </div>
+        
         <script src="script.js"></script>
     </body>
 </html>
